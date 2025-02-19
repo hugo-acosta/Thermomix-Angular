@@ -1,0 +1,20 @@
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-green-600 text-white p-4 shadow-md">
+    <p class="text-2xl font-bold">THERMOMIX</p>
+  </header>
+  
+  <nav class="bg-gray-200 p-4 shadow-md">
+    <ul class="flex gap-4">
+      <li><a routerLink="/inicio" class="bg-green-600 p-2">Inicio</a></li>
+      <li><a routerLink="/libros" class="bg-green-600 p-2">Libros</a></li>
+      <li><a routerLink="/platos" class="bg-green-600 p-2">Platos</a></li>
+      <li><a routerLink="/recetas" class="bg-green-600 p-2">Recetas</a></li>
+    </ul>
+  </nav>
+    
+  <main class="p-6 bg-white shadow-lg rounded-md mt-4">
+    <router-outlet></router-outlet>
+  </main>
+  
+</body>
+

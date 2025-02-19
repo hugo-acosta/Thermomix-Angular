@@ -1,0 +1,7 @@
+<div>
+    <ol *ngIf="libros$">
+        <li *ngFor="let libro of libros$ | async">
+            {{libro.titulo}}
+        </li>
+    </ol>
+</div>
