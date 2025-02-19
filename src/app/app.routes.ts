@@ -10,7 +10,7 @@ export const routes: Routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },
     { path: 'inicio', component: InicioComponent },
     { path: 'libros', component: LibrosComponent },
-    { path: 'libros/:libroId/platos', component: LibrosComponent },
+    { path: 'libros/:libroId/platos', component: PlatosComponent },
     { path: 'platos', component: PlatosComponent },
     { path: 'recetas', component: RecetasComponent },
     { path: '**', component: PageError404Component },

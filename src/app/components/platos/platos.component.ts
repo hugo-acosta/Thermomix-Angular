@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'platos',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './platos.component.css'
 })
 export class PlatosComponent {
+  constructor (private route: ActivatedRoute) {
+    const bookId = this.route.snapshot.paramMap.get('libroId');
+    console.log('Parámetro URL: ', bookId);
+  }
 
 }
